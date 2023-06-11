@@ -1,7 +1,7 @@
 ﻿Public Class frmMenu
     'Private sysMain As New SystemMain
 
-    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         For Each ctrl As Control In Me.Controls
             If TypeOf ctrl Is TextBox Then

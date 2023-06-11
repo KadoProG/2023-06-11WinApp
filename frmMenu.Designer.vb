@@ -22,61 +22,66 @@ Partial Class frmMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnLogin = New System.Windows.Forms.Button()
-        Me.txtLogin_id = New System.Windows.Forms.TextBox()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'btnLogin
-        '
-        Me.btnLogin.Location = New System.Drawing.Point(147, 103)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(75, 23)
-        Me.btnLogin.TabIndex = 2
-        Me.btnLogin.Text = "ログイン(&S)"
-        Me.btnLogin.UseVisualStyleBackColor = True
-        '
-        'txtLogin_id
-        '
-        Me.txtLogin_id.Location = New System.Drawing.Point(147, 35)
-        Me.txtLogin_id.Name = "txtLogin_id"
-        Me.txtLogin_id.Size = New System.Drawing.Size(156, 23)
-        Me.txtLogin_id.TabIndex = 0
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Location = New System.Drawing.Point(147, 64)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(156, 23)
-        Me.txtPassword.TabIndex = 1
-        Me.txtPassword.Text = "ログイン画面"
-        '
-        'btnClose
-        '
-        Me.btnClose.Location = New System.Drawing.Point(228, 103)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
-        Me.btnClose.TabIndex = 3
-        Me.btnClose.Text = "閉じる(&C)"
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
-        'frmMenu
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.btnClose
-        Me.ClientSize = New System.Drawing.Size(331, 149)
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.txtPassword)
-        Me.Controls.Add(Me.txtLogin_id)
-        Me.Controls.Add(Me.btnLogin)
-        Me.Name = "frmMenu"
-        Me.Text = "ログイン画面"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        btnLogin = New Button()
+        txtLogin_id = New TextBox()
+        txtPassword = New TextBox()
+        btnClose = New Button()
+        SuspendLayout()
+        ' 
+        ' btnLogin
+        ' 
+        btnLogin.Location = New Point(210, 172)
+        btnLogin.Margin = New Padding(4, 5, 4, 5)
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(107, 38)
+        btnLogin.TabIndex = 2
+        btnLogin.Text = "ログイン(&S)"
+        btnLogin.UseVisualStyleBackColor = True
+        ' 
+        ' txtLogin_id
+        ' 
+        txtLogin_id.Location = New Point(210, 58)
+        txtLogin_id.Margin = New Padding(4, 5, 4, 5)
+        txtLogin_id.Name = "txtLogin_id"
+        txtLogin_id.Size = New Size(221, 31)
+        txtLogin_id.TabIndex = 0
+        txtLogin_id.Text = "user"
+        ' 
+        ' txtPassword
+        ' 
+        txtPassword.Location = New Point(210, 107)
+        txtPassword.Margin = New Padding(4, 5, 4, 5)
+        txtPassword.Name = "txtPassword"
+        txtPassword.PasswordChar = "*"c
+        txtPassword.Size = New Size(221, 31)
+        txtPassword.TabIndex = 1
+        txtPassword.Text = "ログイン画面"
+        ' 
+        ' btnClose
+        ' 
+        btnClose.Location = New Point(326, 172)
+        btnClose.Margin = New Padding(4, 5, 4, 5)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(107, 38)
+        btnClose.TabIndex = 3
+        btnClose.Text = "閉じる(&C)"
+        btnClose.UseVisualStyleBackColor = True
+        ' 
+        ' frmMenu
+        ' 
+        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleMode = AutoScaleMode.Font
+        CancelButton = btnClose
+        ClientSize = New Size(473, 248)
+        Controls.Add(btnClose)
+        Controls.Add(txtPassword)
+        Controls.Add(txtLogin_id)
+        Controls.Add(btnLogin)
+        Margin = New Padding(4, 5, 4, 5)
+        Name = "frmMenu"
+        Text = "ログイン画面"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents btnLogin As Button
