@@ -1,4 +1,4 @@
-﻿Public Class frmMenu
+﻿Public Class frmLogin
     'Private sysMain As New SystemMain
 
     Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
