@@ -1,6 +1,6 @@
 ﻿Imports Microsoft.VisualBasic
 
-Public Class SystemMain
+Public Module SystemMain
     Public Structure user_setting
         Public id As Integer
         Public login_id As String
@@ -14,7 +14,7 @@ Public Class SystemMain
         End Sub
     End Structure
 
-    Public Shared init_user_data As New user_setting(0, "0", "Admin", "0")
+    Public init_user_data As New user_setting(0, "0", "Admin", "0")
 
     Sub New()
         'init_user_data.id = 0
@@ -23,4 +23,4 @@ Public Class SystemMain
         'init_user_data.password = "0"
     End Sub
 
-End Class
+End Module

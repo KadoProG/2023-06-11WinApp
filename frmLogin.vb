@@ -1,5 +1,4 @@
 ﻿Public Class frmLogin
-    'Private sysMain As New SystemMain
 
     Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -20,12 +19,12 @@
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
-        Console.WriteLine(txtLogin_id.Text & SystemMain.init_user_data.login_id)
+        Console.WriteLine(txtLogin_id.Text & init_user_data.login_id)
         'ボタン押下時の処理
-        If txtLogin_id.Text = SystemMain.init_user_data.login_id And txtPassword.Text = SystemMain.init_user_data.password Then
+        If txtLogin_id.Text = init_user_data.login_id And txtPassword.Text = init_user_data.password Then
             MsgBox("ログイン成功")
         Else
-            MsgBox("ログイン失敗" & txtPassword.Text & SystemMain.init_user_data.password)
+            MsgBox("ログイン失敗" & txtPassword.Text & init_user_data.password)
         End If
 
 
