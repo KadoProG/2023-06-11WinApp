@@ -22,220 +22,233 @@ Partial Class frmMenu
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        GroupBox1 = New GroupBox()
-        Label2 = New Label()
-        Label1 = New Label()
-        GroupBox2 = New GroupBox()
-        Label3 = New Label()
-        Label4 = New Label()
-        GroupBox3 = New GroupBox()
-        Label5 = New Label()
-        Label6 = New Label()
-        GroupBox4 = New GroupBox()
-        Label7 = New Label()
-        Label8 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
-        btnClose = New Button()
-        Panel1 = New Panel()
-        lblWelcome = New Label()
-        GroupBox1.SuspendLayout()
-        GroupBox2.SuspendLayout()
-        GroupBox3.SuspendLayout()
-        GroupBox4.SuspendLayout()
-        Panel1.SuspendLayout()
-        SuspendLayout()
-        ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(62, 56)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(140, 100)
-        GroupBox1.TabIndex = 0
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "タンパク質"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(97, 54)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(14, 15)
-        Label2.TabIndex = 2
-        Label2.Text = "g"
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Yu Gothic UI", 24F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(20, 30)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(71, 45)
-        Label1.TabIndex = 1
-        Label1.Text = "999"
-        ' 
-        ' GroupBox2
-        ' 
-        GroupBox2.Controls.Add(Label3)
-        GroupBox2.Controls.Add(Label4)
-        GroupBox2.Location = New Point(219, 56)
-        GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(140, 100)
-        GroupBox2.TabIndex = 3
-        GroupBox2.TabStop = False
-        GroupBox2.Text = "脂質"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(97, 54)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(14, 15)
-        Label3.TabIndex = 2
-        Label3.Text = "g"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Yu Gothic UI", 24F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(20, 30)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(71, 45)
-        Label4.TabIndex = 1
-        Label4.Text = "999"
-        ' 
-        ' GroupBox3
-        ' 
-        GroupBox3.Controls.Add(Label5)
-        GroupBox3.Controls.Add(Label6)
-        GroupBox3.Location = New Point(374, 56)
-        GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(140, 100)
-        GroupBox3.TabIndex = 4
-        GroupBox3.TabStop = False
-        GroupBox3.Text = "炭水化物"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(97, 54)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(14, 15)
-        Label5.TabIndex = 2
-        Label5.Text = "g"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Yu Gothic UI", 24F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.Location = New Point(20, 30)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(71, 45)
-        Label6.TabIndex = 1
-        Label6.Text = "999"
-        ' 
-        ' GroupBox4
-        ' 
-        GroupBox4.Controls.Add(Label7)
-        GroupBox4.Controls.Add(Label8)
-        GroupBox4.Location = New Point(62, 178)
-        GroupBox4.Name = "GroupBox4"
-        GroupBox4.Size = New Size(452, 43)
-        GroupBox4.TabIndex = 3
-        GroupBox4.TabStop = False
-        GroupBox4.Text = "PFCバランス、カロリー"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(97, 54)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(0, 15)
-        Label7.TabIndex = 2
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Yu Gothic UI", 24F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.Location = New Point(20, 30)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(0, 45)
-        Label8.TabIndex = 1
-        ' 
-        ' Button1
-        ' 
-        Button1.Font = New Font("Yu Gothic UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Button1.Location = New Point(3, 3)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(140, 40)
-        Button1.TabIndex = 5
-        Button1.Text = "食事の記録"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.Font = New Font("Yu Gothic UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Button2.Location = New Point(149, 3)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(140, 40)
-        Button2.TabIndex = 6
-        Button2.Text = "メンテナンス"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' btnClose
-        ' 
-        btnClose.Location = New Point(497, 415)
-        btnClose.Name = "btnClose"
-        btnClose.Size = New Size(75, 23)
-        btnClose.TabIndex = 7
-        btnClose.Text = "終了(&C)"
-        btnClose.UseVisualStyleBackColor = True
-        ' 
-        ' Panel1
-        ' 
-        Panel1.Controls.Add(Button1)
-        Panel1.Controls.Add(Button2)
-        Panel1.Location = New Point(12, 271)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(560, 100)
-        Panel1.TabIndex = 8
-        ' 
-        ' lblWelcome
-        ' 
-        lblWelcome.Location = New Point(272, 9)
-        lblWelcome.Name = "lblWelcome"
-        lblWelcome.Size = New Size(300, 15)
-        lblWelcome.TabIndex = 9
-        lblWelcome.Text = "ようこそ、ゲストさん"
-        lblWelcome.TextAlign = ContentAlignment.TopRight
-        ' 
-        ' frmMenu
-        ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
-        AutoScaleMode = AutoScaleMode.Font
-        CancelButton = btnClose
-        ClientSize = New Size(584, 450)
-        Controls.Add(lblWelcome)
-        Controls.Add(Panel1)
-        Controls.Add(btnClose)
-        Controls.Add(GroupBox4)
-        Controls.Add(GroupBox3)
-        Controls.Add(GroupBox2)
-        Controls.Add(GroupBox1)
-        Name = "frmMenu"
-        Text = "Form1"
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
-        GroupBox2.ResumeLayout(False)
-        GroupBox2.PerformLayout()
-        GroupBox3.ResumeLayout(False)
-        GroupBox3.PerformLayout()
-        GroupBox4.ResumeLayout(False)
-        GroupBox4.PerformLayout()
-        Panel1.ResumeLayout(False)
-        ResumeLayout(False)
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblWelcome = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(62, 56)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(140, 100)
+        Me.GroupBox1.TabIndex = 0
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "タンパク質"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(97, 54)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(14, 15)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "g"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Yu Gothic UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(20, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 45)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "999"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Location = New System.Drawing.Point(219, 56)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(140, 100)
+        Me.GroupBox2.TabIndex = 3
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "脂質"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(97, 54)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(14, 15)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "g"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Yu Gothic UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(20, 30)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 45)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "999"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label5)
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Location = New System.Drawing.Point(374, 56)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(140, 100)
+        Me.GroupBox3.TabIndex = 4
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "炭水化物"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(97, 54)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(14, 15)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "g"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Yu Gothic UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(20, 30)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(71, 45)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "999"
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label7)
+        Me.GroupBox4.Controls.Add(Me.Label8)
+        Me.GroupBox4.Location = New System.Drawing.Point(62, 178)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(452, 43)
+        Me.GroupBox4.TabIndex = 3
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "PFCバランス、カロリー"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(97, 54)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(0, 15)
+        Me.Label7.TabIndex = 2
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Yu Gothic UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Location = New System.Drawing.Point(20, 30)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(0, 45)
+        Me.Label8.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Yu Gothic UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(3, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(140, 40)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "食事の記録"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Yu Gothic UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.Location = New System.Drawing.Point(149, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(140, 40)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "メンテナンス"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.Location = New System.Drawing.Point(497, 415)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.TabIndex = 7
+        Me.btnClose.Text = "終了(&C)"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Location = New System.Drawing.Point(12, 271)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(560, 100)
+        Me.Panel1.TabIndex = 8
+        '
+        'lblWelcome
+        '
+        Me.lblWelcome.Location = New System.Drawing.Point(272, 9)
+        Me.lblWelcome.Name = "lblWelcome"
+        Me.lblWelcome.Size = New System.Drawing.Size(300, 15)
+        Me.lblWelcome.TabIndex = 9
+        Me.lblWelcome.Text = "ようこそ、ゲストさん"
+        Me.lblWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(316, 232)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(41, 15)
+        Me.Label9.TabIndex = 10
+        Me.Label9.Text = "Label9"
+        '
+        'frmMenu
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnClose
+        Me.ClientSize = New System.Drawing.Size(584, 450)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.lblWelcome)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.btnClose)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Name = "frmMenu"
+        Me.Text = "Form1"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
@@ -255,4 +268,5 @@ Partial Class frmMenu
     Friend WithEvents btnClose As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblWelcome As Label
+    Friend WithEvents Label9 As Label
 End Class
