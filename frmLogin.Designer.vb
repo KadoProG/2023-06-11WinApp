@@ -30,55 +30,51 @@ Partial Class frmLogin
         ' 
         ' btnLogin
         ' 
-        btnLogin.Location = New Point(210, 172)
-        btnLogin.Margin = New Padding(4, 5, 4, 5)
+        btnLogin.Location = New Point(147, 103)
         btnLogin.Name = "btnLogin"
-        btnLogin.Size = New Size(107, 38)
+        btnLogin.Size = New Size(75, 23)
         btnLogin.TabIndex = 2
         btnLogin.Text = "ログイン(&S)"
         btnLogin.UseVisualStyleBackColor = True
         ' 
         ' txtLogin_id
         ' 
-        txtLogin_id.Location = New Point(210, 58)
-        txtLogin_id.Margin = New Padding(4, 5, 4, 5)
+        txtLogin_id.Location = New Point(147, 35)
         txtLogin_id.Name = "txtLogin_id"
-        txtLogin_id.Size = New Size(221, 31)
+        txtLogin_id.Size = New Size(156, 23)
         txtLogin_id.TabIndex = 0
         txtLogin_id.Text = "user"
         ' 
         ' txtPassword
         ' 
-        txtPassword.Location = New Point(210, 107)
-        txtPassword.Margin = New Padding(4, 5, 4, 5)
+        txtPassword.Location = New Point(147, 64)
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
-        txtPassword.Size = New Size(221, 31)
+        txtPassword.Size = New Size(156, 23)
         txtPassword.TabIndex = 1
         txtPassword.Text = "ログイン画面"
         ' 
         ' btnClose
         ' 
-        btnClose.Location = New Point(326, 172)
-        btnClose.Margin = New Padding(4, 5, 4, 5)
+        btnClose.Location = New Point(228, 103)
         btnClose.Name = "btnClose"
-        btnClose.Size = New Size(107, 38)
+        btnClose.Size = New Size(75, 23)
         btnClose.TabIndex = 3
         btnClose.Text = "閉じる(&C)"
         btnClose.UseVisualStyleBackColor = True
         ' 
-        ' frmMenu
+        ' frmLogin
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         CancelButton = btnClose
-        ClientSize = New Size(473, 248)
+        ClientSize = New Size(331, 149)
+        ControlBox = False
         Controls.Add(btnClose)
         Controls.Add(txtPassword)
         Controls.Add(txtLogin_id)
         Controls.Add(btnLogin)
-        Margin = New Padding(4, 5, 4, 5)
-        Name = "frmMenu"
+        Name = "frmLogin"
         Text = "ログイン画面"
         ResumeLayout(False)
         PerformLayout()

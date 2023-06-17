@@ -16,6 +16,8 @@ Public Module SystemMain
 
     Public init_user_data As New user_setting(0, "0", "Admin", "0")
 
+    Public user_data As user_setting
+
     Sub New()
         'init_user_data.id = 0
         'init_user_data.login_id = "0"

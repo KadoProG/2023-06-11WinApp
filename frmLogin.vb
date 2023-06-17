@@ -18,11 +18,15 @@
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-
-        Console.WriteLine(txtLogin_id.Text & init_user_data.login_id)
         'ボタン押下時の処理
         If txtLogin_id.Text = init_user_data.login_id And txtPassword.Text = init_user_data.password Then
-            MsgBox("ログイン成功")
+            user_data = init_user_data
+            Dim frmMenu As frmMenu = New frmMenu
+            frmMenu.Show(Me)
+            Me.Hide()
+
+            'MsgBox("ログイン成功" & txtPassword.Text & init_user_data.password)
+
         Else
             MsgBox("ログイン失敗" & txtPassword.Text & init_user_data.password)
         End If
