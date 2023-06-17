@@ -1,4 +1,5 @@
 ﻿Imports Microsoft.VisualBasic
+Imports System.Data.SQLite
 
 Public Module SystemMain
     Public Structure user_setting
@@ -24,5 +25,26 @@ Public Module SystemMain
         'init_user_data.name = "Admin"
         'init_user_data.password = "0"
     End Sub
+
+    Public Function sqlExecute(ByVal strQuery) As DataTable
+        Using con = New SQLiteConnection(GetConnectionString())
+            con.Open()
+            Using cmd = con.CreateCommand()
+                cmd.CommandText = strQuery
+                Using dr = cmd.ExecuteReader()
+                    sqlExecute = New DataTable()
+                    sqlExecute.Load(dr)
+                End Using
+            End Using
+        End Using
+
+
+    End Function
+    ''' <summary>
+    ''' 接続文字列を取得します。
+    ''' </summary>
+    Private Function GetConnectionString() As String        ' 
+        Return New SQLiteConnectionStringBuilder() With {.DataSource = "C:\SQLite3\testFile\sqlite3.db"}.ToString()
+    End Function
 
 End Module
